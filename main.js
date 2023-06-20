@@ -780,9 +780,9 @@ function drawScene() {
   let delta = clock.getDelta();
   processKeyboard(delta);
   movements.lock();
+  requestAnimationFrame(drawScene);
   checkPosition();
   plankAnimate();
-  requestAnimationFrame(drawScene);
 }
 
 drawScene();
